@@ -1,0 +1,26 @@
+h1{
+    color:rgb(73, 68, 56);
+}
+h2{
+    color:rgb(71, 64, 50);
+}
+/*selector de clase*/
+.oscuro {
+background-color: rgb(109, 97, 81);
+   color: white;
+}
+/*selector ID*/
+#biografía {
+    background-color: rgb(218, 205, 181);
+    color:rgb(0, 0, 0);
+}
+footer a {
+    transition: color 0.3s ease;
+  }
+   footer a:hover {
+    color: rgb(187, 157, 97);
+  }
+header{
+    background-image: url(./fondo.jpg);
+    padding: 3rem 1rem;
+}
