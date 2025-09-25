@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Verificación de Edad</title>
+</head>
+<body>
+
+  <h1>Verificación de Edad</h1>
+
+  <button onclick="verificarEdad()">Verificar edad</button>
+
+  <p id="resultado"></p>
+
+  <script>
+    function verificarEdad() {
+      var edad = prompt("Ingresa tu edad:");
+
+      edad = Number(edad); // Convertir a número
+
+      if (edad >= 18) {
+        document.getElementById("resultado").textContent = "Acceso permitido. Eres mayor de edad.";
+      } else {
+        document.getElementById("resultado").textContent = "Acceso denegado. Eres menor de edad.";
+      }
+    }
+  </script>
+
+</body>
+</html>

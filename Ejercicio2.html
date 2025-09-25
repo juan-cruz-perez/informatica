@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Juego de Adivinanza</title>
+</head>
+<body>
+
+  <h1>Juego de Adivinanza</h1>
+  <button onclick="jugar()">Jugar</button>
+
+  <p id="resultado"></p>
+
+  <script>
+    function jugar() {
+      var numeroSecreto = 7;
+      var intento = prompt("Adivina el número (entre 1 y 10):");
+
+      intento = Number(intento);
+
+      if (intento === numeroSecreto) {
+        document.getElementById("resultado").textContent = "¡Felicitaciones! Adivinaste el número.";
+      } else {
+        document.getElementById("resultado").textContent = "No adivinaste. El número secreto era " + numeroSecreto + ".";
+      }
+    }
+  </script>
+
+</body>
+</html>
