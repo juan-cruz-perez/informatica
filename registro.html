@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Registro y Bienvenida</title>
+<link rel="stylesheet" href="registro.css">
+</head>
+<body>
+
+<h1>Registro de Estudiante</h1>
+
+<p>Nombre:</p>
+<input type="text" id="nombre">
+
+<p>Apellido:</p>
+<input type="text" id="apellido">
+
+<p>Curso:</p>
+<input type="text" id="curso">
+
+<br><br>
+
+<button onclick="mostrarBienvenida()">Enviar</button>
+
+<p id="mensaje" style="margin-top:20px; font-weight:bold;"></p>
+
+<script>
+function mostrarBienvenida() {
+    let nombre = document.getElementById("nombre").value;
+    let apellido = document.getElementById("apellido").value;
+    let curso = document.getElementById("curso").value;
+
+    // Mostrar el saludo en la misma página
+    document.getElementById("mensaje").innerHTML =
+    "¡Bienvenido " + nombre + " " + apellido + " del curso " + curso + "!";
+}
+</script>
+
+</body>
+</html>
